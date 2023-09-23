@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="logo.png" alt="logo"></a>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="weather.html">Weather</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="signin">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+    </header>
+
+    <div id="ear">
+        <div class="earth">            
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="ranking box">
+            <center><h2><u><b>Top 10 Most Polluted Countries</b></u></h2></center>
+            <center><h3>Air-Quality Ranking</h3></center>
+            <p id="desc">Air Quality Index depicts the extent of air pollution at a particular location. 
+               These are world rankings of cities and countries with the worst air quality in real-time.
+               Find out whether your location is among the most polluted.</p>
+            <div style="display: flex; height: 30px; background-color: rgb(196, 252, 252); padding-left: 10px; font-size: 22px;">
+                Rank <div style="width: 40px;"></div>Country <div style="width: 238px;"></div>AQI
+            </div>
+            <div id="rca">
+                <div id="rank">1.<br>2.<br>3.<br>4.<br>5.<br>6.<br>7.<br>8.<br>9.<br>10.</div>
+                <div id="country"><img src="https://flagcdn.com/w160/zm.png" class="flag"> Zambia<br>
+                                  <img src="https://flagcdn.com/w160/jo.png" class="flag"> Jordan<br>
+                                  <img src="https://flagcdn.com/w160/bh.png" class="flag"> Bahrain<br>
+                                  <img src="https://flagcdn.com/w160/kw.png" class="flag"> Kuwait<br>
+                                  <img src="https://flagcdn.com/w160/et.png" class="flag"> Ethopia<br>
+                                  <img src="https://flagcdn.com/w160/qa.png" class="flag"> Qatar<br>
+                                  <img src="https://flagcdn.com/w160/lb.png" class="flag"> Lebanon<br>
+                                  <img src="https://flagcdn.com/w160/bd.png" class="flag"> Bangladesh<br>
+                                  <img src="https://flagcdn.com/w160/bw.png" class="flag"> Botswana<br>
+                                  <img src="https://flagcdn.com/w160/ir.png" class="flag"> Iran<br>
+                </div>
+                <div id="aqi">
+                    <button class="btn" style="background-color: pink;">240</button><br>
+                    <button class="btn" style="background-color: orange;">146</button><br>  
+                    <button class="btn" style="background-color: yellow;">99</button><br> 
+                    <button class="btn" style="background-color: yellow;">99</button><br> 
+                    <button class="btn" style="background-color: yellow;">96</button><br> 
+                    <button class="btn" style="background-color: yellow;">79</button><br> 
+                    <button class="btn" style="background-color: yellow;">74</button><br> 
+                    <button class="btn" style="background-color: yellow;">70</button><br> 
+                    <button class="btn" style="background-color: yellow;">69</button><br> 
+                    <button class="btn" style="background-color: yellow;">62</button><br>
+                </div> 
+            </div>
+        </div>
+
+        <div class="box"></div>
+    </div>
+
+    <div style="height: 500px;">
+        <div class="aqibox">
+            <h1>Air- Quality Index</h1>
+            <div class="search">
+                <input type="text" placeholder="Enter city name" spellcheck="false">
+                <button><img src="search.png" alt="srch"></button>
+            </div>
+            <div class="det" style="display: flex;">
+                <p style="font-size: 30px;">City :</p>
+                <h2 class="city" style="margin: 10px;">--</h2>
+                <br>
+                <p style="font-size: 30px;">AQI :</p>
+                <h2 class="aqi" style="margin: 10px;">--</h2>
+            </div>            
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>

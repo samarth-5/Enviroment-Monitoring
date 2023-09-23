@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=New+Tegomin&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.header{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 50px;
+    background: greenyellow; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+}
+.logo img{
+    position: fixed;
+    top: 0;
+    left: 20px;
+    height: 75px;
+    width: 75px;
+}
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 1000;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a:hover{
+    color: red;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.signin{
+    width:210px;
+    display: flex;
+    justify-content: space-between;
+}
+.signin button{
+    height: 30px;
+    width: 100px;
+    font-size: large;
+    border-radius: 25px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+#ear{
+    width:100%;
+    height:500px;
+    background-color: black;
+}
+.signin button:hover{
+    background-color: rgb(255, 60, 60);
+    cursor: pointer;
+}
+.earth{
+    position: relative;
+    left:35%;
+    top:10%;
+    width: 400px;
+    height: 400px;
+    background: #0588e4 url(earth.png);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(252, 250, 250, 0.85);    
+    transition:0.5s;
+    animation: animate 12s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position:0 0;
+    }
+    100%{
+        background-position: 719px 0;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(238, 235, 235);
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    height: 600px;
+    width: 500px;
+    margin: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+.ranking h2{
+    margin: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+}
+#desc{
+    padding: 20px 10px;
+    color: gray;
+}
+#rca{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+}
+#rank{
+    width: 30px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+#country{
+    width: 330px;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+.flag{
+    height: 16px;
+    width:20px;
+    display: inline;
+}
+#aqi{
+    margin: 0px;
+    padding-top: 0px;
+}
+.btn{
+    margin: 0.05px;
+    padding: 0.5px 4px;
+    border-radius:100px;
+}
+
+.aqibox{
+    margin: 50px 80px;
+    height: 450px;
+    border: 2px solid black;
+}
+.aqibox h1{
+    font-size: 40px;
+}
+.search input{
+    margin: 20px;
+    padding: 10px;
+    height:40px;
+    font-size: 20px;    
+}
+.search button{
+    position: relative;
+    top:5px;
+}
+.search button img{
+    height: 30px;
+    width: 30px;
+}
+.det{
+    font-size: 15px;
+}
+.det p{
+    margin-left: 20px;
+}
+footer{
+    width: 100%;
+    height: 350px;
+    background: url(grass.png);
+    background-size: contain;
+    background-color: yellowgreen;
+}
